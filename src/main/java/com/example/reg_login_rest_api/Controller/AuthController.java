@@ -34,7 +34,7 @@ public class AuthController {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    @PostMapping
+    @PostMapping("/signUp")
     public ResponseEntity<?> registerUser(SignUpDTO signUpDto) {
 
         if (userRepository.existsByUsername(signUpDto.getUsername())) {
