@@ -62,7 +62,7 @@ public class AuthController {
         return new ResponseEntity<>("User Registered successfully", HttpStatus.OK);
     }
 
-    @PostMapping("signIn")
+    @PostMapping("/signIn")
     public ResponseEntity<?> AuthenticateUser(@RequestBody LoginDTO loginDTO) {
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(loginDTO.getUsernameOrEmail(), loginDTO.getPassword()));
