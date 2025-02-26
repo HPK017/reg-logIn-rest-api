@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.reg_login_rest_api.Model.User;
 import com.example.reg_login_rest_api.Repository.UserRepository;
-
+//Service
 @Service
 public class CustomerUserServiceDetails implements UserDetailsService {
 
